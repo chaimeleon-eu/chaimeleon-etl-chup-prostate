@@ -16,7 +16,7 @@ def etl_chup_datalake(filename: str, path_input_data: str) -> None:
     df = su.deduplicate_columns(df=df)
 
         # load auxiliary data
-    df_gender = pd.read_csv(f'{path_input_data}gender.csv', sep=";")
+    # df_gender = pd.read_csv(f'{path_input_data}gender.csv', sep=";")
     df_condition_concept = pd.read_csv(f'{path_input_data}condition-concept.csv', sep=";")
     df_measurement_concept = pd.read_csv(f'{path_input_data}measurement-concept.csv', sep=";")
     df_measurement_value_as_concept = pd.read_csv(f'{path_input_data}measurement-value-as-concept.csv', sep=";")
@@ -26,7 +26,7 @@ def etl_chup_datalake(filename: str, path_input_data: str) -> None:
     df_observation_event_field = pd.read_csv(f'{path_input_data}observation-event-field.csv', sep=";")
 
     # omop tables
-    df_patient = ch.etl_chup_datalake_patient(df=df, df_gender=df_gender)
+    df_patient = ch.etl_chup_datalake_patient(df=df)
     df_conditions = ch.etl_chup_datalake_conditions(df=df,df_condition_concept=df_condition_concept)
     df_measurement = ch.etl_chup_datalake_measurement(
         df=df,
@@ -47,8 +47,8 @@ def etl_chup_datalake(filename: str, path_input_data: str) -> None:
     engine.execute(sa_text(sql_create_schema).execution_options(autocommit=True))
 
      # update data in the datalake
-    db.upsert_df(df=df_patient, schema='public', table='patient', key_columns=['person_id'])
-    db.upsert_df(df=df_conditions, schema='public', table='conditions', key_columns=['condition_occurrence_id'])
+    db.upsert_df(df=df_patient, schema='public', table='person', key_columns=['person_id'])
+    db.upsert_df(df=df_conditions, schema='public', table='condition_ocurrence', key_columns=['condition_occurrence_id'])
     db.upsert_df(df=df_measurement, schema='public', table='measurement', key_columns=['measurement_id'])
     db.upsert_df(df=df_observation, schema='public', table='observation', key_columns=['observation_id'])
     db.upsert_df(df=df_specimen, schema='public', table='specimen', key_columns=['specimen_id'])
