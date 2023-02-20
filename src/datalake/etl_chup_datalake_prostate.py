@@ -7,7 +7,7 @@ import src.chaimeleon_etl.utils as su
 logging.basicConfig(format='[%(asctime)s] - %(levelname)s: %(message)s', datefmt='%d-%m-%Y %H:%M:%S', level=logging.INFO)
  
 
-def etl_chup_datalake_patient(df: pd.DataFrame, df_gender: pd.DataFrame) -> pd.DataFrame:
+def etl_chup_datalake_patient(df: pd.DataFrame, df_gender: pd.DataFrame = None) -> pd.DataFrame:
     
     logging.info("table patient")
     df = df.copy()
@@ -96,7 +96,7 @@ def etl_chup_datalake_measurement(
         df_measurement_concept: pd.DataFrame,
         df_measurement_value_as_concept: pd.DataFrame,
         df_measurement_event_field: pd.DataFrame,
-        df_measurement_unit: pd.DataFrame) -> pd.DataFrame:
+        df_measurement_unit: pd.DataFrame = None) -> pd.DataFrame:
     
     logging.info("table measurement")
     concepts = {
@@ -308,7 +308,7 @@ def etl_chup_datalake_observation(df: pd.DataFrame,
 
     df_observation = pd.merge(df_observation, df_observation_concept, how='left', on=['observation_concept'])
     df_observation = pd.merge(df_observation, df_observation_value_as_concept, how='left', on=['value_as_concept'])
-    df_observation = pd.merge(df_observation, df_observation_event_field, how='left', on=['obs_event_field_concept_id'])
+    # df_observation = pd.merge(df_observation, df_observation_event_field, how='left', on=['obs_event_field_concept_id'])
     
     df_observation = df_observation[df_observation['observation_concept_description'].notnull()]
 
@@ -316,6 +316,9 @@ def etl_chup_datalake_observation(df: pd.DataFrame,
     df_observation = df_observation.assign(
         observation_id=np.arange(1, n_observation),
         # visit_occurrence_id=None, ??
+        obs_event_field_concept_id=None,
+        obs_event_field_concept_description=None,
+        obs_event_field_concept_vocab=None,
         observation_type_concept_id=32809,
         observation_type_concept_description='Case Report Form')
 

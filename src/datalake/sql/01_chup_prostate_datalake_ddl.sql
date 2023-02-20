@@ -68,20 +68,20 @@ CREATE TABLE observation(
 );
 
 -- procedures
-CREATE TABLE procedure_ocurrence(
-	procedure_occurrence_id INTEGER,
-	person_id INTEGER,
-	procedure_concept_id INTEGER,
-	procedure_concept_description VARCHAR(50),
-	procedure_concept_vocab VARCHAR(20),
-	procedure_date DATE,
-	procedure_end_date DATE,
-	procedure_type_concept_id INTEGER,
-	procedure_type_concept_description VARCHAR(50),
-	modifier_concept_id INTEGER,
-	modifier_concept_description VARCHAR(50),
-    modifier_concept_vocab VARCHAR(20)
-);
+-- CREATE TABLE procedure_ocurrence(
+-- 	procedure_occurrence_id INTEGER,
+-- 	person_id INTEGER,
+-- 	procedure_concept_id INTEGER,
+-- 	procedure_concept_description VARCHAR(50),
+-- 	procedure_concept_vocab VARCHAR(20),
+-- 	procedure_date DATE,
+-- 	procedure_end_date DATE,
+-- 	procedure_type_concept_id INTEGER,
+-- 	procedure_type_concept_description VARCHAR(50),
+-- 	modifier_concept_id INTEGER,
+-- 	modifier_concept_description VARCHAR(50),
+--     modifier_concept_vocab VARCHAR(20)
+-- );
 
 -- specimen
 CREATE TABLE specimen(
@@ -96,20 +96,20 @@ CREATE TABLE specimen(
 );
 
 -- drugs
-CREATE TABLE drugs(
-	drug_exposure_id INTEGER,
-	person_id INTEGER,
-	drug_concept_id INTEGER,
-	drug_concept_description VARCHAR(50),
-	drug_concept_vocab VARCHAR(20),
-	drug_exposure_start_date DATE,
-	drug_exposure_end_date DATE,
-	drug_type_concept_id INTEGER,
-	drug_type_concept_description VARCHAR(50)
-);
+-- CREATE TABLE drugs(
+-- 	drug_exposure_id INTEGER,
+-- 	person_id INTEGER,
+-- 	drug_concept_id INTEGER,
+-- 	drug_concept_description VARCHAR(50),
+-- 	drug_concept_vocab VARCHAR(20),
+-- 	drug_exposure_start_date DATE,
+-- 	drug_exposure_end_date DATE,
+-- 	drug_type_concept_id INTEGER,
+-- 	drug_type_concept_description VARCHAR(50)
+-- );
 
-CREATE TABLE death(
-	person_id INTEGER,
-	death_date DATE
-);
+-- CREATE TABLE death(
+-- 	person_id INTEGER,
+-- 	death_date DATE
+-- );
 

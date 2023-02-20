@@ -6,8 +6,8 @@ observation_concept;observation_concept_id;observation_concept_description;obser
 4ecog;4174251;ECOG performance status - grade 4;SNOMED
 5ecog;4173456;ECOG performance status - grade 5;SNOMED
 Unknown;;Unknown;
-Yes_hyper;4253628;Known present (Display "Yes");SNOMED
-No_hyper;4253629;Known absent (Display "No");SNOMED
+1.0_hyper;4253628;Known present (Display "Yes");SNOMED
+0.0_hyper;4253629;Known absent (Display "No");SNOMED
 Active surveillance of prostate cancer;37016731;Active surveillance of prostate cancer;SNOMED
 No anti-cancer treatment - watchful waiting;4190466;No anti-cancer treatment - watchful waiting;SNOMED
 No deferred treatment;;No deferred treatment;
