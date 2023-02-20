@@ -1,6 +1,6 @@
 include .env
 export DATALAKE_URL=postgresql://${DB_USER_DATALAKE}:${DB_PASS_DATALAKE}@${DB_HOST_DATALAKE}:${DB_PORT_DATALAKE}/${DB_NAME_DATALAKE}
-
+export CANCER_TYPE=${TYPE}
 clean:
 	docker-compose down -v --rmi all
 	rm -rf outputs/patient_*
