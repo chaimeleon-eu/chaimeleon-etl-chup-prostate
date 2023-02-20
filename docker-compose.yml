@@ -39,6 +39,7 @@ services:
     environment:
       - DATALAKE_URL=postgresql://${DB_USER_DATALAKE}:${DB_PASS_DATALAKE}@${DB_HOST_DATALAKE}:${DB_PORT_DATALAKE}/${DB_NAME_DATALAKE}
       - PATH_OUTPUT_DATA=$PATH_OUTPUT_DATA
+      - CANCER_TYPE=$CANCER_TYPE
     volumes:
       - ./outputs:$PATH_OUTPUT_DATA
 volumes:

@@ -1,5 +1,11 @@
 condition_concept;condition_concept_id;condition_concept_description;condition_vocab;condition_status_concept_id;condition_status_concept_description
 Adenocarcinoma;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma acinar moderadamente diferenciado;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma acinar invasor;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma acinar NOS;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma pouco diferenciado;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma acinar;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma invasor de morfologia acinar;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
 Small cell carcinoma;44502766;Small cell carcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
 Neuroendocrine tumor;36520178;Neuroendocrine tumor, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
 Transitional cell carcinoma;44501195;Transitional cell carcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
