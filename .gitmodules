@@ -1,0 +1,3 @@
+[submodule "src/chaimeleon_etl"]
+	path = src/chaimeleon_etl
+	url = https://github.com/chaimeleon-eu/chaimeleon-etl.git

@@ -1,0 +1,15 @@
+observation_concept;observation_concept_id;observation_concept_description;observation_concept_vocab
+0ecog;4175026;ECOG performance status - grade 0;SNOMED
+1ecog;4173614;ECOG performance status - grade 1;SNOMED
+2ecog;4172043;ECOG performance status - grade 2;SNOMED
+3ecog;4174241;ECOG performance status - grade 3;SNOMED
+4ecog;4174251;ECOG performance status - grade 4;SNOMED
+5ecog;4173456;ECOG performance status - grade 5;SNOMED
+Unknown;;Unknown;
+Yes_hyper;4253628;Known present (Display "Yes");SNOMED
+No_hyper;4253629;Known absent (Display "No");SNOMED
+Active surveillance of prostate cancer;37016731;Active surveillance of prostate cancer;SNOMED
+No anti-cancer treatment - watchful waiting;4190466;No anti-cancer treatment - watchful waiting;SNOMED
+No deferred treatment;;No deferred treatment;
+local_recurrence;4114651;Local;SNOMED
+Date last contact;3016125;Date last contact;LOINC

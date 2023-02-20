@@ -1,0 +1,44 @@
+condition_concept;condition_concept_id;condition_concept_description;condition_vocab;condition_status_concept_id;condition_status_concept_description
+Adenocarcinoma;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Small cell carcinoma;44502766;Small cell carcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Neuroendocrine tumor;36520178;Neuroendocrine tumor, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Transitional cell carcinoma;44501195;Transitional cell carcinoma, NOS, of prostate gland;ICDO3;32893;Confirmed diagnosis
+Neoplasm;44502000;Neoplasm, malignant of prostate gland (Display + "Other");ICDO3;32893;Confirmed diagnosis
+Adenocarcinoma-mortal;44499685;Adenocarcinoma, NOS, of prostate gland;ICDO3;32911;Underlying cause of death
+Small cell carcinoma-mortal;44502766;Small cell carcinoma, NOS, of prostate gland;ICDO3;32911;Underlying cause of death
+Neuroendocrine tumor-mortal;36520178;Neuroendocrine tumor, NOS, of prostate gland;ICDO3;32911;Underlying cause of death
+Transitional cell carcinoma-mortal;44501195;Transitional cell carcinoma, NOS, of prostate gland;ICDO3;32911;Underlying cause of death
+Neoplasm-mortal;44502000;Neoplasm, malignant of prostate gland (Display + "Other");ICDO3;32911;Underlying cause of death
+Tumor invasion of perineural tissue present (prostate);4156560;Tumor invasion of perineural tissue present (prostate);SNOMED;32893;Confirmed diagnosis
+Tumor invasion of perineural tissue absent (prostate);4163608;Tumor invasion of perineural tissue absent (prostate);SNOMED;32893;Confirmed diagnosis
+Unknown;;Unknown;;;
+Vascular invasion by tumor present;4163142;Vascular invasion by tumor present;SNOMED;32893;Confirmed diagnosis
+No vascular invasion by tumor;4132255;No vascular invasion by tumor;SNOMED;32893;Confirmed diagnosis
+Lymphatic (small vessel) invasion by tumor present;4217720;Lymphatic (small vessel) invasion by tumor present;SNOMED;32893;Confirmed diagnosis
+Lymphatic (small vessel) invasion by tumor absent;4217719;Lymphatic (small vessel) invasion by tumor absent;SNOMED;32893;Confirmed diagnosis
+2;4172456;Gleason grade score 2 out of 10;SNOMED;32893;Confirmed diagnosis
+3;4263220;Gleason grade score 3 out of 10;SNOMED;32893;Confirmed diagnosis
+4;4086970;Gleason grade score 4 out of 10;SNOMED;32893;Confirmed diagnosis
+5;4250166;Gleason grade score 5 out of 10;SNOMED;32893;Confirmed diagnosis
+6;4224785;Gleason grade score 6 out of 10;SNOMED;32893;Confirmed diagnosis
+7;4211973;Gleason grade score 7 out of 10;SNOMED;32893;Confirmed diagnosis
+8;4140825;Gleason grade score 8 out of 10;SNOMED;32893;Confirmed diagnosis
+9;4240465;Gleason grade score 9 out of 10;SNOMED;32893;Confirmed diagnosis
+10;4074238;Gleason grade score 10 out of 10;SNOMED;32893;Confirmed diagnosis
+Gleason grade group 1;3655244;Gleason grade group 1;SNOMED;32893;Confirmed diagnosis
+Gleason grade group 2;3655245;Gleason grade group 2;SNOMED;32893;Confirmed diagnosis
+Gleason grade group 3;3655246;Gleason grade group 3;SNOMED;32893;Confirmed diagnosis
+Gleason grade group 4;3655247;Gleason grade group 4;SNOMED;32893;Confirmed diagnosis
+Gleason grade group 5;3655248;Gleason grade group 5;SNOMED;32893;Confirmed diagnosis
+Urinary incontinence;197672;Urinary incontinence;SNOMED;32908;Secondary diagnosis
+Continent of urine;4164570;Continent of urine;SNOMED;32908;Secondary diagnosis
+Bowels: fully continent;4080323;Bowels: fully continent;SNOMED;32908;Secondary diagnosis
+Incontinence of feces;197675;Incontinence of feces;SNOMED;32908;Secondary diagnosis
+Normal sexual function;4018406;Normal sexual function;SNOMED;32908;Secondary diagnosis
+Abnormal sexual function;4237140;Abnormal sexual function;SNOMED;32908;Secondary diagnosis
+Hormone refractory prostate cancer;4141960;Hormone refractory prostate cancer;SNOMED;32908;Secondary diagnosis
+Hormone sensitive prostate cancer;36716186;Hormone sensitive prostate cancer;SNOMED;32908;Secondary diagnosis
+Not applicable;;;;;
+Tumor Progression;4168352;Tumor Progression;SNOMED;32893;Confirmed diagnosis
+Recurrent tumor;4097297;Recurrent tumor;SNOMED;32893;Confirmed diagnosis
+No progression or recurrence during follow up time;;No progression or recurrence during follow up time;;;

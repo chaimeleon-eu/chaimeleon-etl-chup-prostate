@@ -1,0 +1,23 @@
+select
+	measurement_id,
+	person_id,
+	measurement_concept_id,
+	measurement_concept_description,
+	measurement_concept_vocab,
+	measurement_date,
+	value_as_concept_id,
+	value_as_concept_description,
+	value_as_concept_vocab,
+	unit_concept_id,
+	unit_concept_description,
+	unit_concept_vocab,
+	range_low,
+	range_high,
+	measurement_type_concept_id,
+	measurement_type_concept_description,
+	value_as_number,
+	meas_event_field_concept_id,
+	meas_event_field_concept_description,
+	meas_event_field_concept_vocab
+from measurement
+;

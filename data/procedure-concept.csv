@@ -1,0 +1,12 @@
+procedure_concept;procedure_concept_id;procedure_concept_description;procedure_concept_vocab
+Radical perineal prostatectomy;4338373;Radical perineal prostatectomy;SNOMED
+Laparoscopic radical prostatectomy;44809585;Laparoscopic radical prostatectomy;SNOMED
+Robot assisted laparoscopic radical prostatectomy;46270921;Robot assisted laparoscopic radical prostatectomy;SNOMED
+No surgery;;No surgery;
+pelvic_lymph_dissec;4030412;Pelvic lymphadenectomy;SNOMED
+radio;4029715;Radiation oncology AND/OR radiotherapy;SNOMED
+andro;45768763;Androgen deprivation therapy;SNOMED
+chemo;4273629;Chemotherapy;SNOMED
+Beam Radiation of Prostate;2800720;Beam Radiation of Prostate;ICD10PCS
+Brachytherapy of Prostate - High Dose Rate;2834168;Brachytherapy of Prostate - High Dose Rate;ICD10PCS
+Brachytherapy of Prostate - Low Dose Rate;2880755;Brachytherapy of Prostate - Low Dose Rate;ICD10PCS

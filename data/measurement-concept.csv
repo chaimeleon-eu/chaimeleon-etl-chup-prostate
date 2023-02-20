@@ -1,0 +1,31 @@
+measurement_concept;measurement_concept_id;measurement_concept_description;measurement_concept_vocab
+Total prostate specific antigen level;44793131;Total prostate specific antigen level;SNOMED
+Serum testosterone measurement;4156642;Serum testosterone measurement;SNOMED
+1pi;2000000020;Prostate Imaging Reporting & Data System category 1 ;Chaimeleon
+2pi;2000000021;Prostate Imaging Reporting & Data System category 2;Chaimeleon
+3pi;2000000022;Prostate Imaging Reporting & Data System category 3;Chaimeleon
+4pi;2000000023;Prostate Imaging Reporting & Data System category 4;Chaimeleon
+5pi;2000000024;Prostate Imaging Reporting & Data System category 5;Chaimeleon
+1pg;36769081;Primary Gleason Pattern 1;Cancer Modifier
+2pg;36770084;Primary Gleason Pattern 2;Cancer Modifier
+3pg;36768379;Primary Gleason Pattern 3;Cancer Modifier
+4pg;36769232;Primary Gleason Pattern 4;Cancer Modifier
+5pg;36769630;Primary Gleason Pattern 5;Cancer Modifier
+1sg;36768174;Secondary Gleason Pattern 1;Cancer Modifier
+2sg;36768312;Secondary Gleason Pattern 2;Cancer Modifier
+3sg;36768307;Secondary Gleason Pattern 3;Cancer Modifier
+4sg;36768371;Secondary Gleason Pattern 4;Cancer Modifier
+5sg;36769198;Secondary Gleason Pattern 5;Cancer Modifier
+Sentinel Lymph Nodes ;36768184;Sentinel Lymph Nodes;Cancer Modifier
+TNM Path T;35918889;TNM Path T;NAACCR
+TNM Path N;35918791;TNM Path N;NAACCR
+TNM Path M;35918319;TNM Path M;NAACCR
+TNM Path Stage Group;35918286;TNM Path Stage Group;NAACCR
+TNM Clin T;35918562;TNM Clin T;NAACCR
+TNM Clin N;35918746;TNM Clin N;NAACCR
+TNM Clin M;35918383;TNM Clin M;NAACCR
+TNM Clin Stage Group;35918597;TNM Clin Stage Group;NAACCR
+lymph nodes metastasis;36768989;Lymph Nodes with Metastasis;Cancer Modifier
+viscera metastasis;35225597;Metastasis to the Viscera;Cancer Modifier
+bone metastasis;36769301;Metastasis to the Bone;Cancer Modifier
+distant metastasis;36768964;Distant Metastasis (NOS);Cancer Modifier

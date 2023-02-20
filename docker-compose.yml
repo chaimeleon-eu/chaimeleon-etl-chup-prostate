@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+  # ------------------------------------------------------------------
+  #  DataLake
+  # ------------------------------------------------------------------
+  datalake:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=$DB_USER_DATALAKE
+      - POSTGRES_DB=$DB_NAME_DATALAKE
+      - POSTGRES_PASSWORD=$DB_PASS_DATALAKE
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - dtlk-data-volume:/var/lib/postgresql/data
+      - ./src/datalake/sql:/docker-entrypoint-initdb.d/
+  # ------------------------------------------------------------------
+  # ETL datalake
+  # ------------------------------------------------------------------
+  etl_chup_datalake:
+    image: chaimeleon-etl-chup-datalake:latest
+    build:
+      context: .
+    environment:
+      - DATALAKE_URL=postgresql://${DB_USER_DATALAKE}:${DB_PASS_DATALAKE}@${DB_HOST_DATALAKE}:${DB_PORT_DATALAKE}/${DB_NAME_DATALAKE}
+  # ------------------------------------------------------------------
+  # ETL indexa
+  # ------------------------------------------------------------------
+  etl_chup_indexa:
+    image: chaimeleon-etl-chup-indexa:latest
+    command:
+      - "python"
+      - "to_xml.py"
+    entrypoint: ""
+    build:
+      context: .
+    environment:
+      - DATALAKE_URL=postgresql://${DB_USER_DATALAKE}:${DB_PASS_DATALAKE}@${DB_HOST_DATALAKE}:${DB_PORT_DATALAKE}/${DB_NAME_DATALAKE}
+      - PATH_OUTPUT_DATA=$PATH_OUTPUT_DATA
+    volumes:
+      - ./outputs:$PATH_OUTPUT_DATA
+volumes:
+  dtlk-data-volume:
