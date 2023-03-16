@@ -166,7 +166,7 @@ def etl_chup_datalake_measurement(
             ['TNM Path N' if pd.notnull(x) else None for x in df['pN']],
             df['Data_2'],
             None, None, None, None,
-            ['pN' + str(x) for x in df['pN']],
+            ['pN' + str(int(x)) if pd.notna(x) else None for x in df['pN']],
             1147663],
         # 'metastasis_path_category':[
         #     ['TNM Path M' if pd.notnull(x) else None for x in df['pR']],## unconfirmed

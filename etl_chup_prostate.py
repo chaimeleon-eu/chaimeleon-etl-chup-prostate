@@ -10,8 +10,8 @@ import src.datalake.etl_chup_datalake_prostate as ch
 def etl_chup_datalake(filename: str, path_input_data: str) -> None:
     # load raw data
     logging.info(f"initializing etl La Fe datalake")
-    df = pd.read_excel(f'{path_input_data}{filename}', sheet_name='Dados',header=[1,2,3])
-    df.columns = [a for a, b, c in df.columns.tolist()]
+    df = pd.read_excel(f'{path_input_data}{filename}', sheet_name='Dados',header=[1,2])
+    df.columns = [a for a, b in df.columns.tolist()]
     df.columns = [i.strip().replace(' ', '_').replace('\n', '').replace('__', '_') for i in df.columns]
     df = su.deduplicate_columns(df=df)
 
@@ -59,4 +59,4 @@ def etl_chup_datalake(filename: str, path_input_data: str) -> None:
     return None
 
 if __name__ == "__main__":
-    etl_chup_datalake(filename='Cópia de BD1_anonimizado_25jan_revBahia.xlsx', path_input_data='./data/')
+    etl_chup_datalake(filename='Cópia de BD1_anonimizado_25jan_revBahia_2.xlsx', path_input_data='./data/')
