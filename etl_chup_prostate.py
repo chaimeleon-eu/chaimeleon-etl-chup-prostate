@@ -48,7 +48,7 @@ def etl_chup_datalake(filename: str, path_input_data: str) -> None:
 
      # update data in the datalake
     db.upsert_df(df=df_patient, schema='public', table='person', key_columns=['person_id'])
-    db.upsert_df(df=df_conditions, schema='public', table='condition_ocurrence', key_columns=['condition_occurrence_id'])
+    db.upsert_df(df=df_conditions, schema='public', table='condition_occurrence', key_columns=['condition_occurrence_id'])
     db.upsert_df(df=df_measurement, schema='public', table='measurement', key_columns=['measurement_id'])
     db.upsert_df(df=df_observation, schema='public', table='observation', key_columns=['observation_id'])
     db.upsert_df(df=df_specimen, schema='public', table='specimen', key_columns=['specimen_id'])

@@ -11,7 +11,7 @@ CREATE TABLE person(
 );
 
 --  conditions
-CREATE TABLE condition_ocurrence(
+CREATE TABLE condition_occurrence(
 	condition_occurrence_id INTEGER,
 	person_id INTEGER,
 	condition_concept_id INTEGER,
